@@ -18,7 +18,7 @@ new Vue({
     addStudent: function() {
         // この function() { } の中にaddStudentメソッド
         // （入力欄に入力された値と、ID値（最後に登録されたID値+1の値）が新たに出現する機能）の処理を書く
-        this.students.push({ id: this.defaultLastId + 1, name: this.name, cource: this.cource, acceptancePeriod: this.acceptancePeriod })
+        this.students.push({ id: this.defaultLastId += 1, name: this.name, cource: this.cource, acceptancePeriod: this.acceptancePeriod })
         this.name = ''
         this.cource = ''
         this.acceptancePeriod = ''
